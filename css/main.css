@@ -178,8 +178,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
+.modal-icon:hover, .modal-icon :focus {
   fill: var(--accent-color);
 }
 
@@ -436,6 +435,7 @@ body {
   background-color: #ffffff;
   right: 0;
   top: 0;
+  padding-top: 48px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -488,6 +488,61 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.menu-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  top: 0px;
+  padding-top: 20px;
+  padding-right: 25px;
+  padding-left: 0;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.mob-menu-close-icon {
+  width: 40px;
+  height: 40px;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-close-icon:hover,
+.mob-menu-close-icon :focus {
+  fill: var(--accent-color);
+}
+
+.mob-menu-social {
+  margin-bottom: 48px;
+}
+
+.mob-menu-social-list {
+  display: flex;
+}
+
+.mob-menu-social-item,
+.mob-menu-social-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-right: 10px;
+}
+
+.mob-menu-social-item {
+  margin-right: 20px;
+}
+
+.mob-menu-social-item + .mob-menu-social-item {
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  width: 22px;
 }
 
 .hero {
