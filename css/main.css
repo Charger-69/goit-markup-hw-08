@@ -316,8 +316,15 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+  }
+}
+
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -430,6 +437,7 @@ body {
 
 .mob-menu-open-btn {
   margin-left: auto;
+  margin-right: 12px;
 }
 
 .mob-menu-container {

@@ -3,12 +3,14 @@
     padding-top: 32px;
     padding-bottom: 32px;
     border-bottom: 1px solid #ececec;
+    @media screen and (max-width: 767px) {
+      display: flex;
+    }
   }
   
   .header-container {
     display: flex;
-    // justify-content: space-between;
-    // align-items: center;
+    align-items: center;
   }
 
   .header-logo {
@@ -114,6 +116,7 @@
 
   .mob-menu-open-btn {
     margin-left: auto;
+    margin-right: 12px;
   }
 
   .mob-menu-container {
