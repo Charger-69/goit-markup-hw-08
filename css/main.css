@@ -537,12 +537,11 @@ body {
 }
 
 .mob-menu-social-item {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mob-menu-social-item + .mob-menu-social-item {
   border-left: 1px solid rgba(33, 33, 33, 0.2);
-  width: 22px;
 }
 
 .hero {
