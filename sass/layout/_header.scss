@@ -116,7 +116,9 @@
 
   .mob-menu-open-btn {
     margin-left: auto;
-    margin-right: 12px;
+    @media (min-width: 768px) {
+        display: none;
+      }
   }
 
   .mob-menu-container {

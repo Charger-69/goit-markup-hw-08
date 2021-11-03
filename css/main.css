@@ -437,7 +437,12 @@ body {
 
 .mob-menu-open-btn {
   margin-left: auto;
-  margin-right: 12px;
+}
+
+@media (min-width: 768px) {
+  .mob-menu-open-btn {
+    display: none;
+  }
 }
 
 .mob-menu-container {
