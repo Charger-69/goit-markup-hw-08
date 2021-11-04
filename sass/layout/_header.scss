@@ -46,7 +46,9 @@
   }
   
   .header-logo {
-    padding-right: 90px;
+    @media screen and (min-width: 1200px) {
+      padding-right: 90px;
+    }
   }
   
   .header-logo-text-1 {

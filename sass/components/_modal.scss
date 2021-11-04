@@ -1,6 +1,15 @@
 .modal {
+    padding-bottom: 40px;
+    max-height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+    @media screen and (min-width: 1200px) {
     width: 528px;
     min-height: 581px;
+    margin-left: 93px;
+    margin-top: 12px;
+    }
+    
     background-color: #ffffff;
     position: relative;
     transform: scale(1) rotate(0);
