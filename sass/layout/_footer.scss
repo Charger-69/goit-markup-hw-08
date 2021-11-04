@@ -30,6 +30,9 @@
   
   .adress {
     font-style: unset;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 60px;
+    }
   }
   
   .footer-item:not(:last-child) {
@@ -65,12 +68,15 @@
   }
   
   .footer-social {
-    margin-top: 12px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+    }
     @media screen and (max-width: 768px) {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin-bottom: 60px;
       }
   }
   
@@ -122,6 +128,8 @@
   
   .footer-input-box {
     display: flex;
+      // padding-left: 15px;
+      // padding-right: 15px;
     @media screen and (max-width: 1200px) {
       flex-direction: column;
     }
@@ -131,13 +139,26 @@
     justify-content: center;
     }
   }
+
+  .footer-mail-form {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      }
+  }
   
   .footer-mail-input {
     margin-right: 12px;
     background-color: #2f303a;
+    @media screen and (max-width: 768px) {
+      width: 90vw;
+      margin-bottom: 20px;
+    }
+    height: 50px;
     @media screen and (min-width: 1200px) {
     width: 358px;
-    height: 50px;
     }
     
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -159,6 +180,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
     min-width: 200px;
     min-height: 50px;
     background: #2196f3;
