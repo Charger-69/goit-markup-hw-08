@@ -1,15 +1,38 @@
+.projects {
+  @media screen and (max-width: 1200px) {
+    padding-bottom: 60px;
+  }
+  
+}
+
 .filters-container {
-    margin-bottom: 34px;
+  @media screen and (min-width: 1200px) {
+  margin-bottom: 34px;
+  }  
+  @media (max-width: 768px) {
+    padding-left: 15px;
+  }
+  margin-bottom: 40px;
   }
   
   .filters-list {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 1200px) {
     justify-content: center;
+    }
+    @media (max-width: 768px) {
+      padding-top: 45px;
+    }
+    
     margin-left: auto;
     margin-right: auto;
   }
   
   .filters-btn {
+    @media screen and (max-width: 1200px) {
+      margin-top: 15px;
+    }
     background: #f5f4fa;
     padding: 6px 22px;
     border-radius: 4px;
@@ -36,19 +59,45 @@
   .projects-list {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    @media screen and (min-width: 1200px) {
     margin-left: -30px;
     margin-top: -30px;
+    }
+    @media screen and (max-width: 1200px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    
   }
   
   .projects-item {
+    @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    }
+    margin: 0 auto;
+    width: 100%;
     display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,:focus {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
+  }
+
+  .projects-item:not(:last-child) {
+    @media (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+    
+  }
+
+  .project-items-img {
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+    }
+    
   }
   
   .project-items-text {
