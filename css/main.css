@@ -335,7 +335,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 760px) {
   .header {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -350,9 +350,20 @@ body {
 
 .header-container {
   display: flex;
-  align-items: center;
   margin-left: 15px;
   margin-right: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-container {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header-container {
+    justify-content: space-between;
+  }
 }
 
 .header-logo {
@@ -364,8 +375,6 @@ body {
 
 .contacts-list {
   display: flex;
-  align-items: center;
-  margin-left: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -374,8 +383,27 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    align-items: center;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts-list {
+    flex-direction: column;
+  }
+}
+
 .contacts-item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .hedaer-nav {
@@ -383,7 +411,7 @@ body {
   align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 760px) {
   .header-logo {
     padding-right: 90px;
   }
