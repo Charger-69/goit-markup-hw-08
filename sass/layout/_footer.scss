@@ -6,8 +6,13 @@
   
   .footer-container {
     display: flex;
+    
     @media screen and (max-width: 768px) {
       flex-direction: column;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     
   }
@@ -15,8 +20,11 @@
   .footer-contact {
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
-  }
-    margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-left: 76px;
+    }
+    // margin: 0 auto;
     }
     
   
@@ -69,6 +77,9 @@
   }
   
   .footer-social {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-right: 89px;
+    }
     @media screen and (min-width: 1200px) {
       margin-top: 12px;
     }
@@ -87,6 +98,7 @@
     font-size: 14px;
     line-height: 1.14;
     margin-bottom: 20px;
+    
   }
   
   .footer-social-link {
@@ -119,13 +131,27 @@
       margin-left: 93px;
     margin-top: 12px;
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        flex-basis: 100%;
+        padding-top: 60px;
+      }
+      
   }
+
+  // .footer-mail-form {
+  //   @media screen and (max-width: 768px) {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     flex-direction: column;
+  //     }
+  // }
   
   .footer-input-box {
     display: flex;
@@ -140,15 +166,6 @@
     justify-content: center;
     }
   }
-
-  .footer-mail-form {
-    @media screen and (max-width: 768px) {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      }
-  }
   
   .footer-mail-input {
     margin-right: 12px;
@@ -160,6 +177,10 @@
     height: 50px;
     @media screen and (min-width: 1200px) {
     width: 358px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      min-width: 450px;
+      margin-bottom: 20px;
     }
     
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -181,7 +202,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1200px) {
+      margin: 0 auto;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      max-width: 200px;
       margin: 0 auto;
     }
     min-width: 200px;
