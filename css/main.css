@@ -67,6 +67,12 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
 .btn {
   cursor: pointer;
 }
@@ -676,6 +682,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/hero/hero-tab.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 768px;
+    min-height: 400px;
+    margin: 0 auto;
+  }
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -686,6 +704,13 @@ body {
   .hero-container {
     padding-top: 106px;
     padding-bottom: 106px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero-container {
+    padding-top: 118px;
+    padding-bottom: 118px;
   }
 }
 
@@ -722,6 +747,12 @@ body {
     line-height: 1.36;
     letter-spacing: 0.06em;
     width: 696px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .hero-title {
+    width: 360px;
   }
 }
 
