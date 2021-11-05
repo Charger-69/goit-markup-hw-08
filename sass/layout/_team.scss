@@ -11,7 +11,10 @@
   
   .team-list {
     display: flex;
+    @media screen and (max-width: 1200px) {
     flex-direction: column;
+    }
+    
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 60px;
