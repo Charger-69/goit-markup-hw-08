@@ -1072,6 +1072,14 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .clients-item-link {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .clients-item-link:hover .clients-item-icon,
 .clients-item-link :focus .clients-item-icon {
   fill: var(--accent-color);
