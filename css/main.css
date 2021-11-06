@@ -356,8 +356,6 @@ body {
 
 .header-container {
   display: flex;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -369,6 +367,13 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .header-container {
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header-container {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
