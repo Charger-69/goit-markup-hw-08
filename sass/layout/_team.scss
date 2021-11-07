@@ -1,5 +1,8 @@
 .team {
     background-color: #f5f4fa;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 100%;
+    }
   }
   
   .team-main-title {
